@@ -22,7 +22,5 @@ def main():
               response = agent.run(user_question)
               st.write(response)
               
-
-              
 if __name__=="__main__":
      main()   
