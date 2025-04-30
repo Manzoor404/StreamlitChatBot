@@ -15,7 +15,7 @@ def main():
     if user_csv is not None: 
          user_question = st.text_input("Please ask a question about your CSV" )
 
-         llm = OpenAI(model="gpt-4", temperature=0)
+         llm = OpenAI(temperature=0)
          agent = create_csv_agent(llm, user_csv, verbose=True, allow_dangerous_code=True)
 
          if user_question is not None and user_question != '':
